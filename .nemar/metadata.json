@@ -1,32 +1,125 @@
 {
   "version": "2.0",
-  "dataset_id": "on003498",
-  "source": "openneuro",
-  "source_id": "ds003498",
+  "pipeline_stage": "enriched",
   "title": "interictal iEEG during slow-wave sleep with HFO markings",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Fedele T": {},
     "Krayenbühl N": {},
     "Hilfiker P": {},
-    "Adam Li": {},
+    "Adam Li": {
+      "orcid": "0000-0001-8421-365X",
+      "affiliations": [
+        {
+          "name": "Johns Hopkins University"
+        }
+      ]
+    },
     "Sarnthein J.": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003498.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003498",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003498",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41598-017-13064-1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.4485036",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0105-7",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "ieeg"
   ],
-  "datatypes": [
-    "ieeg"
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
   ],
-  "acknowledgements": "Adam Li (github: adam2392) converted the dataset from the original format into BIDS. He used mne-bids to do so, and uses the dataset to validate mne-hfo, a Python open-source implementation of HFO detection algorithms. See 10.5281/zenodo.4485036."
+  "formats": [
+    ".docx",
+    ".eeg",
+    ".gitattributes",
+    ".json",
+    ".lock",
+    ".m",
+    ".mat",
+    ".md",
+    ".md5",
+    ".pdf",
+    ".py",
+    ".pyc",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from 20 subjects with marked high-frequency oscillations (HFOs) during slow-wave sleep. The data includes ripple and fast ripple events detected and validated from the original publication, with electrode contacts selected to exclude motor and language-responsive sites. The dataset has been converted to BIDS format and includes HFO event annotations in standardized TSV files, facilitating validation of HFO detection algorithms.",
+  "methods_description": "iEEG recordings were obtained during slow-wave sleep. Electrode contacts evoking motor or language responses during electrical stimulation were excluded. In temporal lobe epilepsy patients, only the 3 most mesial bipolar channels were included. HFO events (ripples, fast ripples) were detected and marked in the original dataset and are provided as event annotations in BIDS format.",
+  "keywords": [
+    {
+      "term": "intracranial electroencephalography"
+    },
+    {
+      "term": "high-frequency oscillations"
+    },
+    {
+      "term": "ripples"
+    },
+    {
+      "term": "fast ripples"
+    },
+    {
+      "term": "sleep"
+    },
+    {
+      "term": "seizure prediction"
+    },
+    {
+      "term": "epilepsy"
+    },
+    {
+      "term": "slow-wave sleep"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "interictal"
+    },
+    {
+      "term": "temporal lobe epilepsy"
+    },
+    {
+      "term": "electrode stimulation mapping"
+    }
+  ],
+  "source_hash": "851de9032b579908d27461a0bf041ca8187ad3c5d2288121e87fd8604a4c779d"
 }
