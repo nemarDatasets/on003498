@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "interictal iEEG during slow-wave sleep with HFO markings",
+  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from 20 subjects with marked high-frequency oscillations (HFOs) during slow-wave sleep. The data has been converted to BIDS format and includes HFO event annotations (ripples and fast ripples) validated against the original morphology-based detection from the source publication. The dataset serves as a resource for validating open-source HFO detection algorithms and understanding the clinical significance of HFOs in epilepsy.",
+  "methods_description": "iEEG recordings were obtained during slow-wave sleep. Electrode contacts evoking motor or language responses during electrical stimulation were excluded. In temporal lobe epilepsy patients, only the 3 most mesial bipolar channels were included. HFO events were detected and marked in the original study using morphology-based detection methods. The dataset was converted to BIDS format using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +20,32 @@
     },
     "Sarnthein J.": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003498.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "iEEG"
     },
+    {
+      "term": "high-frequency oscillations"
+    },
+    {
+      "term": "HFO detection"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "slow-wave sleep"
+    },
+    {
+      "term": "ripples"
+    },
+    {
+      "term": "fast ripples"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003498",
       "identifier_type": "URL",
@@ -53,15 +75,20 @@
       "identifier": "10.1038/s41597-019-0105-7",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003498.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "47.9 GB (1185 files)"
   ],
   "formats": [
     ".docx",
@@ -79,47 +106,8 @@
     ".tsv",
     ".txt",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from 20 subjects with marked high-frequency oscillations (HFOs) during slow-wave sleep. The data includes ripple and fast ripple events detected and validated from the original publication, with electrode contacts selected to exclude motor and language-responsive sites. The dataset has been converted to BIDS format and includes HFO event annotations in standardized TSV files, facilitating validation of HFO detection algorithms.",
-  "methods_description": "iEEG recordings were obtained during slow-wave sleep. Electrode contacts evoking motor or language responses during electrical stimulation were excluded. In temporal lobe epilepsy patients, only the 3 most mesial bipolar channels were included. HFO events (ripples, fast ripples) were detected and marked in the original dataset and are provided as event annotations in BIDS format.",
-  "keywords": [
-    {
-      "term": "intracranial electroencephalography"
-    },
-    {
-      "term": "high-frequency oscillations"
-    },
-    {
-      "term": "ripples"
-    },
-    {
-      "term": "fast ripples"
-    },
-    {
-      "term": "sleep"
-    },
-    {
-      "term": "seizure prediction"
-    },
-    {
-      "term": "epilepsy"
-    },
-    {
-      "term": "slow-wave sleep"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "interictal"
-    },
-    {
-      "term": "temporal lobe epilepsy"
-    },
-    {
-      "term": "electrode stimulation mapping"
-    }
-  ],
-  "source_hash": "851de9032b579908d27461a0bf041ca8187ad3c5d2288121e87fd8604a4c779d"
+  "source_hash": "b67f679b9192f1e0cf0ae977f09549632b93de15a1458ab90d66c3f1fb2875b1"
 }
