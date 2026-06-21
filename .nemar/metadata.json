@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "interictal iEEG during slow-wave sleep with HFO markings",
-  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from 20 subjects with marked high-frequency oscillations (HFOs) during slow-wave sleep. The data has been converted to BIDS format and includes HFO event annotations (ripples and fast ripples) validated against the original morphology-based detection from the source publication. The dataset serves as a resource for validating open-source HFO detection algorithms and understanding the clinical significance of HFOs in epilepsy.",
-  "methods_description": "iEEG recordings were obtained during slow-wave sleep. Electrode contacts evoking motor or language responses during electrical stimulation were excluded. In temporal lobe epilepsy patients, only the 3 most mesial bipolar channels were included. HFO events were detected and marked in the original study using morphology-based detection methods. The dataset was converted to BIDS format using MNE-BIDS.",
+  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from 20 subjects with marked high-frequency oscillations (HFOs) during slow-wave sleep. The data has been converted to BIDS format and includes HFO event annotations (ripples and fast ripples) validated against the original morphology-based detection from the source publication. The dataset serves as a resource for validating open-source HFO detection algorithms and understanding the relationship between HFO resection and seizure outcomes in epilepsy patients.",
+  "methods_description": "iEEG recordings were obtained during slow-wave sleep. Electrode contacts evoking motor or language responses during electrical stimulation were excluded. In temporal lobe epilepsy patients, only the 3 most mesial bipolar channels were included. HFO events were detected and marked in the original study using morphology-based methods. Data conversion to BIDS format was performed using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -31,9 +31,7 @@
       "term": "HFO detection"
     },
     {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "epilepsy"
     },
     {
       "term": "slow-wave sleep"
